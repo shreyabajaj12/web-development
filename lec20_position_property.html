@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display:inline-block;
+            border:2px solid red;
+            width: 150px;
+            height: 150px;
+            margin:2px;
+        }
+        #box3{
+            /* relative=relative to its normal position we can adjust the top left bottom right and will a gap in its normal position */
+            /* position:relative; */
+            /* position:absolute; */
+            /* absolute=relative to the parent in this case it is the container */
+            /* top:14px;
+            left: 134px; */
+            /* position:fixed;
+            right: 4px; */
+            /* it will be fixed no matter how much is the container size & how much u scroll used for the ex is chatting */
+            position:sticky;
+            top: 30px;
+            /* it will be remain stick on the top */
+
+
+        }
+        .container{
+            background-color: bisque;
+            height: 200000px;
+        }
+    </style>
+</head>
+<body><div class="container">   
+       <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

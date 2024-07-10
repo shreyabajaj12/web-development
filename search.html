@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px;
+        }
+
+        .search-bar {
+            position: relative;
+        }
+
+        .search-input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+            padding-right: 30px; /* Space for the magnifying glass icon */
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="search-icon" onclick="performSearch()">&#128269;</div>
+        </div>
+    </div>
+
+    <!-- Your website content goes here -->
+
+    <script>
+        function performSearch() {
+            // Add your search functionality here
+            var searchTerm = document.querySelector('.search-input').value;
+            alert('Performing search for: ' + searchTerm);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        html{
+            font-size: 23px;
+        }
+        .container{
+            /* width: 400px;
+            height: 300px; */
+            height:100vh;  /*view height covers the entire page*/
+            width: 100vw;
+            font-size: 10px;
+            border:2px solid red;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /* font-size: 5em;  
+             /*em means the times of the parent here it is container*/
+           /* padding:3em; 30 times means above one multiplied with the parent */
+
+        }
+        #second{
+           /* font-size: 3rem;/*times the html font size i.e, 23*3*/
+           /* padding: 3rem;*/
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is a heading</h1>
+        <h1 id="second">This is a 2nd heading</h1>
+        <h1 id="third">This is a 3rd heading</h1>
+
+    </div>
+</body>
+</html>

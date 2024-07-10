@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            background-color: red;
+            color:rgb(252, 247, 247);
+            font-size: 62px;
+            text-align: center;
+            display: none;
+
+        }
+        @media only screen and (max-width:300px){  /*helps us to set the things acc to the device used dimensions*/
+            #box1 {display: block;
+            background-color: cyan;}
+
+        }
+        @media(min-width:300px) and (max-width:800px) {
+            #box2{
+                display:block;
+                background-color: rgb(215, 40, 191);
+
+            }
+        }
+        @media(min-width:800px){
+            #box3{
+                display: block;
+                background-color: green;
+            }
+            h2{
+                font-size: 80px;
+
+            }
+            h2::selection{
+                color: yellow;
+                background-color: red;
+            }
+        }
+        h1 span{
+            color:red;
+            text-decoration: line-through;
+
+        }
+        h1{
+            color: #C41359;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">mai ek iphone hoon</div>
+    <div class="box" id="box2">mai ek tablet hoon</div>
+    <div class="box" id="box3">mai ek ear pod hoon</div>
+    <div class="box" id="box4">mai ek macbook hoon</div>
+    <h2>SHREYA BAJAJ SAW</h2>
+    <h1><span>I M</span> POSSIBLE</h1>
+    
+</body>
+</html>

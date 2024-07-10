@@ -1,0 +1,39 @@
+/*#car1{
+    width: 100px;
+    height: 120px;
+    background-color: red;
+    position:absolute;
+}
+#car2{
+    width: 110px;
+    height: 40px;
+    background-color: purple;
+    position:absolute;  /*it allows to move the absolute object anywhere on 2d plane*/
+    /* top: 10%; /*it only works with position
+    left:30% 
+
+
+}
+#car3{
+    width: 60px;
+    height: 80px;
+    background-color: aqua;
+    position: absolute;
+}
+/*absolute == it raises accordingly to the layer 1st 1st one 2nd 2nd one and 3rd 3rd one*/
+#box{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    position:relative;   
+    /* helps to move the box within it only  that is relative to the box*/
+}
+#chota{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position:absolute;
+    left: 40%;
+}
+/* justify content== for the working on width
+align items== is used for the working on height */

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flaxbox</title>
+    <style>
+        .container{
+            height: 344px;
+            width:100%;
+            border:2px solid black;
+            display: flex;  /*transpose*/
+            /* flex-direction: row reverse; */
+            /* flex-direction: column; */
+            flex-wrap:  wrap;
+            /* flex-flow: row-reverse wrap;works for the both */
+            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+            align-items: stretch;
+
+        }
+        .item{
+            background-color: tomato;
+            border:2px solid rgb(25, 46, 181);
+            margin:10px;
+            padding: 3px;
+            width: 200px;
+            height: 100px;
+            opacity:0.7
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a flaxbox</h1>
+    <div class="container">
+        <div class="item" id="item1">
+            first box
+        </div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+        <div class="item" id="item4">fourth box</div>
+        <div class="item" id="item5">fifth box</div>
+        <div class="item" id="item6">sixth box</div>
+    </div>
+    
+</body>
+</html>

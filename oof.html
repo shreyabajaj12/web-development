@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Circle with Pointer</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        #container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #circle {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            border-radius: 50%;
+            position: absolute;
+            pointer-events: none; /* Ensure the circle doesn't interfere with mouse events */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="circle"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var circle = document.querySelector("#circle");
+
+            document.addEventListener("mousemove", function(dets) {
+                // Update circle position based on mouse coordinates
+                circle.style.left = dets.x - circle.offsetWidth / 2 + "px";
+                circle.style.top = dets.y - circle.offsetHeight / 2 + "px";
+            });
+        });
+    </script>
+
+</body>
+</html>

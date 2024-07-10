@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display:flex;
+        }
+        .card{
+            padding: 23px 12px;
+            /* border:2px solid red; */
+            margin: 23px 12px;
+            background-color: burlywood;
+            box-shadow: -12px -12px 14px 12px black;  /*lst one is the spread radius*/
+            /* we can use alpha int case of color i.e, rgba for the darkness of the color we want */
+            box-shadow: inset 3px 5px 4px  blue;
+            /* it is inserting inside the box */
+            
+        }
+        .card H2{
+            text-shadow: 3px 4px 7px rgb(142, 138, 138);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is HTML course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis iste fugit.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is a python class</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis illum alias ut.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dolor sit iure?</p>
+        </div>
+        <div class="card" id="card4">
+            <h2>Card4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In numquam natus aliquid.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

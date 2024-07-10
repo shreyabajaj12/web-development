@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Round&family=Phudu&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url(https://designbro.com/blog/wp-content/uploads/fitness-logo-design.jpg);
+        font-family: 'Nova Round', cursive;
+        font-weight: bold;
+
+    }
+
+    .left {
+        
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 12px;
+
+    }
+
+    .mid {
+        
+        display: block;
+        width: 50%;
+        margin: 12px auto;
+
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 12px;
+        
+        display: inline-block;
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: rgb(246, 247, 248);
+        text-decoration: none;
+        padding: 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(239, 247, 173);
+    }
+
+    .left img {
+        width: 100px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        color: aliceblue;
+        line-height: 0px;
+        font-size: 19px;
+    }
+
+    .btn {
+        font-family: 'Nova Round', cursive;
+        margin: 0px 9px;
+        padding: 4px 5px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(155, 138, 138);
+    }
+    .container{
+        border:2px solid rgb(236, 240, 229);
+        border-radius: 12px;
+        color:rgb(224, 28, 70);
+        margin:88px 83px;
+        padding: 34px 54px;
+        width:55%;
+    }
+   
+    .formgrp input{
+        text-align: center;
+        display: block;
+        width: 217px;
+        padding: 6px;
+        border-radius: 19px;
+        margin: 8px;
+
+
+
+    }
+    .container h1{
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/018/245/986/small/dumbbell-thin-line-icon-png.png"
+                alt="gym">
+            <div> Shreya fitness</div>
+
+
+
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+
+
+        </div>
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join The Best GYM of GOA</h1>
+        <form action="noaction.php">
+            <div class="formgrp">
+               <div><input type="text"name=""placeholder="enter your name"></div> 
+                <div>your name:<input type="number"name=""placeholder="enter your age"></div>
+                <div>Gender:male<input type="radio" name="gender">
+                female<input type="radio"name="gender"></div>
+               <div><input type="text"name=""placeholder="enter your gender"></div> 
+               <div><input type="text"name=""placeholder="enter your locality"></div> 
+               <div><input type="number"name=""placeholder="enter your phone number"></div> 
+               <div><input type="email"name=""placeholder="enter your email"></div> 
+
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

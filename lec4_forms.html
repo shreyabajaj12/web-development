@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>This is form tutorials</h2>
+    <form action="backend.php">  <!--it is just use to send that data should go to backend.php-->
+        <label for="name">Name</label> <!--lable is used just for the user if clicks on name it appears-->
+    <div> <input type="text"name="myName"id="name"></div><br>
+    <div> Role:<input type="text"name="myrole"></div><br>
+    <div> work:<input type="text"name="mywork"></div><br>
+    <div> Email:<input type="email"name="myEmail"></div><br> 
+    <div> Date of Birth:<input type="date"></div> <br>
+    <div>Write about yourself:<br><textarea name="mytext" rows="10"cols="90"></textarea></div> <br>
+    <label for="car">Car</label>
+        <select name="mycar" id="car">
+            <option value="Fortuner">Fortuner</option>
+            <option value="Range Rover">RangeRover</option>
+            <option value="Thar">Thar</option>
+            <option value="Jaguar">Jaguar</option>
+
+
+    </select> <br>
+
+    <div>Bonus:<input type="number"></div>
+    <label for="elligible">Are you elligible:</label>
+    <div><input type="checkbox"name="myEligibility"id="elligible" checked></div>
+    <div>Gender:Male<input type="radio" name="mygender">
+         Female<input type="radio" name="mygender"></div>
+   <div> <input type="submit"value="Submit Now">
+         <input type="reset"value="reset now"></div>
+     <!--name is just used so that backend could recognize-->
+    </form>
+    
+</body>
+</html>

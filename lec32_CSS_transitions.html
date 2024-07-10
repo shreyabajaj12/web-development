@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        padding: 23px 45px;
+        margin: 12px;
+    }
+    #box{
+        display:flex;
+        height: 200px;
+        width: 200px;
+        padding: 23%;
+        margin: 24px;
+        justify-content:center;/*for the vertically*/
+         align-items: center;/*for horizontally*/
+        background-color: red;
+        transition-property: background-color;
+        transition-duration: 3s;
+        transition: background-color 0s ease-in-out 3s; 
+        /* transition short hand property , lst one is transition delay*/
+
+        transition:all .2s ease-in-out .3s; 
+        /* all property includes all things inside that also */
+
+    }
+    #box:hover{
+        background-color: aliceblue;
+        height: 300px;
+        width: 400px;
+        border-radius:50%;
+        font-size:45px;
+        padding: 23%;
+        margin: 24px;
+    }
+    #bottle{
+        display:flex;
+        height: 200px;
+        width: 200px;
+        justify-content:center;/*for the vertically*/
+         align-items: center;/*for horizontally*/
+        background-color: rgb(210, 245, 72);
+        transition-property: background-color;
+        transition-duration: 3s;
+        transition:background-color 0s ease-in-out 3s; 
+        /* transition short hand property , lst one is transition delay*/
+
+        transition:all .2s ease-in-out .3s; 
+        /* all property includes all things inside that also */
+
+    }
+    #bottle:hover{
+        background-color: rgb(207, 78, 216);
+        height: 300px;
+        width: 400px;
+        border-radius:50%;
+        font-size:45px;
+    }
+</style>
+<body>
+    <h3>this is my transition of css</h3>
+    <div class="container">
+        <div id="box">
+            this is a box
+        </div>
+        <div id ="bottle">this is a bottle</div>
+    </div>
+
+</body>
+</html>

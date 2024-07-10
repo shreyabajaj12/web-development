@@ -1,0 +1,447 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+  .chatgpt-symbol {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="chatgpt-symbol">ChatGPT</div>
+<h4>HTM&nbsp;&nbsp;&nbsp;            L</h4>
+<audio controls><source src=""></audio>
+<video controls></video>
+<embed src="movie1.mp4" type="video">
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blinging Star Effect</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #blinging-area {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    .star {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #fdd017; /* Yellow color for the star */
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+      animation: bling 0.8s ease-in-out infinite;
+    }
+
+    @keyframes bling {
+      0%, 20%, 50%, 80%, 100% {
+        transform: scale(1);
+      }
+      40% {
+        transform: scale(1.5);
+      }
+      60% {
+        transform: scale(1.2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="blinging-area">
+    Stars will be appended here dynamically -->
+  <!-- </div>
+
+  <script>
+    const blingingArea = document.getElementById('blinging-area');
+
+    function createBlingingStar() {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.left = `${Math.random() * 100}%`;
+      blingingArea.appendChild(star);
+    }
+
+    blingingArea.addEventListener('mouseenter', () => {
+      createBlingingStar();
+    });
+  </script>
+</body>
+</html>
+ --> 
+
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blinging Star Effect</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .star {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #fdd017; /* Yellow color for the star */
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+      animation: bling 0.8s ease-in-out infinite;
+    }
+
+    @keyframes bling {
+      0%, 20%, 50%, 80%, 100% {
+        transform: scale(1);
+      }
+      40% {
+        transform: scale(1.5);
+      }
+      60% {
+        transform: scale(1.2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    function createBlingingStar(event) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = `${event.clientY}px`;
+      star.style.left = `${event.clientX}px`;
+      document.body.appendChild(star);
+    }
+
+    document.body.addEventListener('mousemove', (event) => {
+      createBlingingStar(event);
+    });
+  </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000_640.jpg) center/cover no-repeat fixed;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="message">Short Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href ="contact.css" rel="stylesheet">
+    <title>contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li class="item"><a href="home.html">Home</a></li>
+                <li class="item"><a href="vlog.html">Vlog</a></li>
+                <li class="item"><a href="about.html">About</a></li>
+                <li class="item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            </nav></header>
+            <!-- <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Contact Us</title>
+                
+            </head>
+            <body> -->
+            
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+            
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" required>
+            
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            
+                        <label for="email">Email ID:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+            
+                        <label for="destination">Destination:</label>
+                        <input type="text" id="destination" name="destination" required>
+            
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+            
+                        <label for="message">Short Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+            
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <footer>
+                    <div class="center">
+                        Copyright &copy; www.theIndianTraveller.com All rights reserved!!
+                    </div>
+                </footer>
+            
+            </body>
+            </html>
+            
+
+        <!-- <section id="body">
+            <h1></h1>
+            <div class="grid">
+                <div id="left" class="box1">
+                    <h1>CONTACT US:</h1>
+                    <div>Name:<input type="text"name="myname" placeholder="Full Name"></div><br>
+                    <div>Email:<input type="email" placeholder="Email"> </div><br>
+                    <div>Phone Number:<input type="number"placeholder="Ph. no"></div><br>
+                    <div>Date of Birth:<input type="date"></div><br>
+                    <div>Nationality:<input type="text" placeholder="Country"></div>
+                    <div>Address:<input type="text"></div>
+                    
+                    <div>Gender:&nbsp;&nbsp;Male<input type="radio">
+                    Female<input type="radio"></div><br>
+                    <div> Destination In India<br>
+                    <select name="Destination In India">
+                        <option value="Agra">AGRA</option>
+                        <option value="Agra">KASHMIR</option>
+                        <option value="Agra">KERELA</option>
+                        <option value="Agra">JAIPUR</option>
+                    </select></div>
+                    <div> Destination In International<br>
+                    <select name="Destination In International">
+                        <option value="Agra">SINGAPORE</option>
+                        <option value="Agra">MALDIVES</option>
+                        <option value="Agra">NEW YORK</option>
+                        <option value="Agra">DUBAI</option>
+                    </select></div>
+                    <div>Your Message Here:<br><textarea rows="20"cols="90"></textarea></div>
+                    <div> <input type="submit"value="Submit Now">
+                        <input type="reset"value="reset now"></div>
+                
+            </div>
+        </section>
+        
+        </nav>
+       
+    
+</body>
+</html> -->

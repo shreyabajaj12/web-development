@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=null
+        let b=45;
+        let c=true;
+        let d=BigInt(3456674);
+        let e="Shreya";
+        let f =Symbol("I am a nice symbol");
+        let g
+        console.log(a,b,c,d,e,f,g)
+        console.log(typeof f)
+
+        //objects
+        const item ={
+            "Harry":true,
+            "Subh":false,
+            "Shreya":54,
+            "Rakshit":undefined
+        }
+        console.log(item["Shreya"])
+
+        const a1={
+            name: "Harry",
+            section:1
+        }
+        a1["friend"]="shrey"
+        a1["water"]="drink"
+        console.log(a1)
+        console.log(a1.water)
+        
+        let student =new Object();
+        student.name="rose",
+        student.roll=23
+        student.intro=function(){
+            console.log(`${this.name} bearing roll no ${this.roll} has sored ${this.marks}`)
+        }
+        student.intro()
+
+
+    </script>
+</body>
+</html>

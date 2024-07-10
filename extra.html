@@ -1,0 +1,160 @@
+<!-- lecture 25 is special -->
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         img{
+            height:20%;
+            width:20%;
+        }
+        img{
+            /* box-shadow: 10px 10px 20px black; */
+            filter:drop-shadow(10px 10px 20px rgb(218, 26, 26))/*length width blur color*/
+        }
+        .btn{
+            padding:10px 20px;
+            background-color: rgb(42, 103, 103);
+            font-size: 600;
+            color:aliceblue;
+            border-radius:3px;
+            border:none;
+            transition:  all ease 0.3s;
+
+        }
+        button:active{
+            scale:0.9;
+        }
+        body::-webkit-scrollbar{
+        background-color: transparent;
+        width: 2px;
+        }
+        body::-webkit-scrollbar-thumb{
+            background:linear-gradient(red,blue,yellow);
+            width: 2px;
+        }
+        h1{
+            font-weight: 900;
+            position:relative;
+        }
+        h1::after{
+            content:"";
+            position:absolute;
+            left:0;
+            bottom:0;
+            height:3px;
+            width:0%;
+            background-color: blue;
+        }
+        h1:hover::after{
+            width:100%;
+            transition:all ease 1s;
+        }
+        h2{
+            font-size: 50px;
+            font-weight: 900;
+            background-image: url(https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1536,h_975/https://www.designhill.com/design-blog/wp-content/uploads/2017/08/colors.jpg);
+            block-size:cover; /* If the proportions of the background differ from the element, the image is cropped either vertically or horizontally.*/
+            background-position: left;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color:transparent;
+            filter:drop-shadow(10px 10px 2px rgb(59, 34, 34))
+            /* -webkit-font-smoothing: antialiased; */
+        }
+        #loader{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border:5px solid rgb(188, 184, 184);
+            border-top-color: rgb(59, 58, 58);
+            animation: rotate is infinite;
+        }
+        @keyframes rotate{
+            100%{
+               transform: rotate(360deg);
+            }
+
+        } 
+        #parent{
+            background-color: lightblue;
+            white-space: nowrap;/*for to come all in one line*/
+            overflow-x: auto;  /*to avoid the scrolling of the page it just scroll the portion */
+            overflow-y: hidden;
+        } 
+        #parent::-webkit-scrollbar {
+        background-color: transparent;
+        width: 2px;
+        height: 4px;
+        }
+        #parent::-webkit-scrollbar-thumb{
+            background-color: rgb(133, 35, 179);
+            width: 2px;
+            height: 4px;
+        }
+        .child{
+            height: 300px;
+            width: 300px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg);
+            image height: ;
+            margin: 10px;
+            display: inline-block;
+        }
+        #box{
+            height: 350px;
+            width: 350px;
+            background-image: url(https://wallpapers.com/images/hd/lion-pictures-snw3r6217skr1ni5.jpg);
+            background-size:cover;
+            background-position: center;
+            border-radius: 5px;
+        }
+        
+            #bottom{
+                height: 40%;
+                width: 100%;
+                background-color: linear-gradiant(transparent,black);
+                position:absolute;
+                bottom: -40%;
+                position:relative;
+                transition:all ease 0.5s;
+                overflow: hidden;
+
+                
+            }
+            #box:hover #bottom{
+                bottom:0;
+
+            }
+            #splash{
+                height: 490px;
+                width: 400px;
+                object-fit: cover;
+                
+            }
+        
+        </style>
+</head>
+<body>
+    <img src="http://www.pngmart.com/files/5/Doraemon-Transparent-Background.png">
+    <button class="btn">submit</button>
+    <h1>Computer</h1>
+    <h2>SHREYA BAJAJ</h2>
+    <div id="loader"></div>
+    <div id="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    <div id="box">
+        <div id="bottom"></div>
+    </div>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/59415d5c-e643-4954-ada6-5dee74400e73/webchat/config.js" defer></script>
+    
+</body>
+</html>

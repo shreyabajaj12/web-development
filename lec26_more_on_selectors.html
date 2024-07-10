@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    div>p{  /*for applying direct child not inside anyone*/
+        color:yellow;
+        background-color: lightgreen;
+        font-weight: bold;
+    }
+    div+p{
+        color: white;
+        background-color: red;  /*it is for the one whose lst sibling is div i.e,</div>*/
+    }
+</style>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">this is a paragraph inside li</li>
+                <li>this will not get affected</li>
+
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>this ia another paragraph</p>
+    </div>
+    <p>ths is outermodt paragraph</p>
+    
+</body>
+</html>
